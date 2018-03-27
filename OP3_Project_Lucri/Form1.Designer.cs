@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -90,8 +91,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(653, 310);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Welkom\r\nHier vind je de antwoorden op de volgende vragen:\r\nvraag 1\r\nvraag 2\r\nvraa" +
-    "g 3\r\nvraag 4\r\nNavigeren kan via de tabbladen\r\n\r\n© Team lucri";
+            this.textBox1.Text = resources.GetString("textBox1.Text");
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tabPage1
@@ -101,7 +101,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(3537, 688);
+            this.tabPage1.Size = new System.Drawing.Size(3537, 700);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Huizenprijzen";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -147,29 +147,29 @@
             // 
             // chart1
             // 
-            chartArea4.AxisX.Interval = 1D;
-            chartArea4.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea4.AxisX.IsLabelAutoFit = false;
-            chartArea4.AxisX.LabelStyle.Angle = -90;
-            chartArea4.AxisX.Title = "Wijken";
-            chartArea4.AxisY.Title = "Gemiddelde woningwaarde in euro x 1.000";
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
+            chartArea1.AxisX.Interval = 1D;
+            chartArea1.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.LabelStyle.Angle = -90;
+            chartArea1.AxisX.Title = "Wijken";
+            chartArea1.AxisY.Title = "Gemiddelde woningwaarde in euro x 1.000";
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.DataSource = this.huizenprijzenBindingSource;
-            legend4.Name = "Legend1";
-            legend4.Position.Auto = false;
-            legend4.Position.Height = 4.574132F;
-            legend4.Position.Width = 4.629931F;
-            legend4.Position.X = 1F;
-            this.chart1.Legends.Add(legend4);
+            legend1.Name = "Legend1";
+            legend1.Position.Auto = false;
+            legend1.Position.Height = 4.574132F;
+            legend1.Position.Width = 4.629931F;
+            legend1.Position.X = 1F;
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(567, 47);
             this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Huizenprijzen";
-            series4.XValueMember = "wijk_naam";
-            series4.YValueMembers = "wijk_gem_woz";
-            this.chart1.Series.Add(series4);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Huizenprijzen";
+            series1.XValueMember = "wijk_naam";
+            series1.YValueMembers = "wijk_gem_woz";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(3068, 635);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -180,7 +180,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(3537, 688);
+            this.tabPage2.Size = new System.Drawing.Size(3537, 700);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Criminaliteit";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -190,7 +190,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(3537, 688);
+            this.tabPage3.Size = new System.Drawing.Size(3537, 700);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Recreatie";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -199,7 +199,7 @@
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(3537, 688);
+            this.tabPage4.Size = new System.Drawing.Size(3537, 700);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Luchtkwaliteit";
             this.tabPage4.UseVisualStyleBackColor = true;
